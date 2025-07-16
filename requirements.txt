@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+requests
+chromadb
+pydantic
+sentence-transformers
+PyMuPDF
+langchain
+pandas
+python-multipart
+#python-dotenv

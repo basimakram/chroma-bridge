@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/chroma/data
+    environment:
+      - CHROMA_SERVER_HOST=0.0.0.0
+      - CHROMA_SERVER_HTTP_PORT=8000
+  
+  myapp:
+    build: .  
+    ports:
+      - "8001:8001"
+    depends_on:
+      - chromadb
+    environment:
+      - VECTORDB_URL=chromadb
+      - VECTORDB_PORT=8000
+      - SERVICENOW_URL=
+      - SERVICENOW_PASSWORD=
+      - SERVICENOW_USER=
