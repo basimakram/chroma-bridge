@@ -12,20 +12,6 @@ A FastAPI-based service that synchronizes ServiceNow incident tickets to ChromaD
 - **Log Management**: Comprehensive logging with time-based filtering
 - **Database Management**: Clean and manage ChromaDB collections
 
-## Architecture
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   ServiceNow    │    │   FastAPI       │    │   ChromaDB      │
-│   (Tickets)     │───▶│   (Processor)   │───▶│   (Vector DB)   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                              ▲
-                              │
-                       ┌─────────────────┐
-                       │   User Uploads  │
-                       │   (PDF Files)   │
-                       └─────────────────┘
-```
 
 ## Prerequisites
 
