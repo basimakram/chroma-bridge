@@ -281,7 +281,6 @@ CHROMA_APIS/
 ├── .env.example          # Example environment file
 ├── Dockerfile            # Docker configuration
 ├── docker-compose.yml    # Multi-service setup
-├── last_update_time.json # Timestamp tracking
 ├── logs/                 # Application logs
 │   └── app-YYYY-MM-DD.log
 └── README.md             # This file
